@@ -1,0 +1,46 @@
+* { font-family: 'Poppins', sans-serif; }
+body { background: #f8f9fa; }
+
+.hero {
+    background-attachment: fixed;
+}
+
+.hover-card {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.hover-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(220, 53, 69, 0.3) !important;
+}
+
+.add-to-cart {
+    transition: all 0.3s;
+}
+.add-to-cart:hover {
+    background: #000 !important;
+    transform: scale(1.05);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, #ffc107, #ff8c00);
+    border: none;
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.4);
+}
+
+.animate__pulse {
+    animation-duration: 2s;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+/* Cart Badge Animation */
+#cart-count {
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
